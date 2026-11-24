@@ -154,4 +154,6 @@ Write-Host ""
 # Elles ne valent que pour ce lancement ; ensuite, .claude/ prend le relais.
 $env:ANTHROPIC_BASE_URL = 'https://openrouter.ai/api'
 $env:ANTHROPIC_AUTH_TOKEN = $cle
+# Plein écran dès ce premier lancement, comme le réglage tui de .claude/settings.json ensuite.
+$env:CLAUDE_CODE_NO_FLICKER = '1'
 claude

@@ -9,5 +9,6 @@
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-haiku-5.5",
     "CLAUDE_CODE_SUBAGENT_MODEL": "anthropic/claude-opus-5.5[1m]"
   },
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "tui": "fullscreen"
 }
