@@ -99,6 +99,7 @@ if (Test-Path $reglages) {
   try { $cleExistante = (Get-Content $reglages -Raw | ConvertFrom-Json).env.ANTHROPIC_AUTH_TOKEN } catch { }
 }
 if ($cleExistante -and (Cle-Valide $cleExistante)) {
+  $cle = $cleExistante
   Ok "déjà configurée"
 } else {
   $cle = ''
@@ -148,4 +149,9 @@ Ok "prêt"
 Write-Host ""
 Write-Host "Tout est prêt ! Pour relancer Claude Code plus tard : double-clique sur installer.cmd." -ForegroundColor Green
 Write-Host ""
+# Au premier lancement, Claude Code n'applique le env de .claude/ qu'après l'assistant de
+# démarrage et la question de confiance : sans ces variables, il demande de se connecter.
+# Elles ne valent que pour ce lancement ; ensuite, .claude/ prend le relais.
+$env:ANTHROPIC_BASE_URL = 'https://openrouter.ai/api'
+$env:ANTHROPIC_AUTH_TOKEN = $cle
 claude
