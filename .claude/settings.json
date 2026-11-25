@@ -10,5 +10,11 @@
     "CLAUDE_CODE_SUBAGENT_MODEL": "anthropic/claude-opus-5.5[1m]"
   },
   "effortLevel": "high",
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "promptSuggestionEnabled": false,
+  "autoMemoryEnabled": false,
+  "feedbackSurveyRate": 0,
+  "companyAnnouncements": [
+    "Bienvenue au dojo ! Pour commencer, tape /grill-me suivi de ton idée de jeu."
+  ]
 }
