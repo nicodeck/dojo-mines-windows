@@ -14,7 +14,5 @@
   "promptSuggestionEnabled": false,
   "autoMemoryEnabled": false,
   "feedbackSurveyRate": 0,
-  "companyAnnouncements": [
-    "Bienvenue au dojo ! Pour commencer, tape /grill-me suivi de ton idée de jeu."
-  ]
+  "disableClaudeAiConnectors": true
 }

@@ -148,6 +148,8 @@ Ok "prêt"
 
 Write-Host ""
 Write-Host "Tout est prêt ! Pour relancer Claude Code plus tard : double-clique sur installer.cmd." -ForegroundColor Green
+Write-Host "Pour commencer, tape /grill-me suivi de ton idée de jeu."
+Write-Host ""
 Write-Host ""
 # Au premier lancement, Claude Code n'applique le env de .claude/ qu'après l'assistant de
 # démarrage et la question de confiance : sans ces variables, il demande de se connecter.
